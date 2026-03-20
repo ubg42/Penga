@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en-GB" data-ok="0" data-scrolling="1" data-audio="1" data-loading="0" data-subpage="0" data-subfolder="penga/" data-nav="1">
+<head>
+
+
+<!-- 🏷 misc metadata -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,shrink-to-fit=no">
+<title>Penga 🐧🧊 penguin physics game</title><!-- v2 -->
+<meta name="description" content="How many penguins can you save from the royal tyrant?">
+<link rel="canonical" href="https://vole.wtf/penga/">
+<link rel="license" href="https://vole.wtf/blah/#copyright">
+<base target="_top">
+
+<!-- 👤 social -->
+<meta name="fediverse:creator" content="@VOLEwtf@crispsandwi.ch">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="VOLE.wtf">
+<meta property="og:title" content="Penga 🐧🧊 penguin physics game">
+<meta property="og:description" content="How many penguins can you save from the royal tyrant?">
+<meta property="og:image" content="https://vole.wtf/penga/social.jpg?v=2">
+<meta property="og:url" content="https://vole.wtf/penga/">
+<meta property="og:locale" content="en_GB">
+
+<!-- 🖼 icons etc -->
+<link rel="icon" href="https://vole.wtf/favicon.png">
+<link rel="apple-touch-icon" href="https://vole.wtf/apple-touch-icon.png">
+<meta name="theme-color" content="#487EA8">
+<meta name="color-scheme" content="only light">
+
+<!-- 🤖 schema -->
+<script type="application/ld+json">
+	{"@context":"https:\/\/schema.org","@graph":[{"@type":"Organization","@id":"https:\/\/vole.wtf\/#\/schema\/organization\/1","url":"https:\/\/vole.wtf\/","name":"VOLE.wtf","logo":{"@type":"ImageObject","@id":"https:\/\/vole.wtf\/#\/schema\/image\/icon","url":"https:\/\/vole.wtf\/apple-touch-icon.png","width":192,"height":192,"caption":"VOLE.wtf"},"image":{"@id":"https:\/\/vole.wtf\/#\/schema\/image\/icon"},"sameAs":["https:\/\/crispsandwi.ch\/@VOLEwtf","https:\/\/bsky.app\/profile\/vole.wtf","https:\/\/spacehey.com\/volewtf","https:\/\/www.tiktok.com\/@volewtf"]},{"@type":"WebSite","@id":"https:\/\/vole.wtf\/#\/schema\/website\/1","url":"https:\/\/vole.wtf\/","name":"VOLE.wtf","publisher":{"@id":"https:\/\/vole.wtf\/#\/schema\/organization\/1"}},{"@type":"WebPage","@id":"https:\/\/vole.wtf\/penga\/","url":"https:\/\/vole.wtf\/penga\/","inLanguage":"en-GB","name":"Penga \ud83d\udc27\ud83e\uddca penguin physics game","description":"How many penguins can you save from the royal tyrant?","image":{"@type":"ImageObject","@id":"https:\/\/vole.wtf\/penga\/social.jpg","url":"https:\/\/vole.wtf\/penga\/social.jpg?v=2","caption":"Penga \ud83d\udc27\ud83e\uddca penguin physics game"},"primaryImageOfPage":{"@id":"https:\/\/vole.wtf\/penga\/social.jpg"},"thumbnailUrl":"https:\/\/vole.wtf\/penga\/thumb.jpg?v=2","isPartOf":{"@id":"https:\/\/vole.wtf\/#\/schema\/website\/1"}}]}
+</script>
+
+<!-- 🆗 js present -->
+<script>
+	if ( (! document.all) && (window.requestAnimationFrame) ) document.documentElement.setAttribute('data-ok', '1');
+</script>
+
+<!-- 🚀 priority preloads -->
+<link rel="preload" href="/_common/common.css?v=1.82" as="style">
+<link rel="preload" href="/_common/sunday-comics.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" href="/_common/sunday-comics-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" href="/_common/disposable-digi.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" href="/_common/common.js?v=1.82" as="script">
+<link rel="preload" href="/_common/common-audio2.js?v=1.82" as="script">
+
+<!-- 💈 styling -->
+<link rel="stylesheet" href="/_common/common.css?v=1.82">
+<style>
+	html {scroll-behavior: smooth;font-size: 26.667vw;}@media (min-width: 562px) {html {font-size: 150px;}}main {touch-action: pan-y;background: #487EA8;color: #002040;font-size: 20px;}header {z-index: 1;width: 3.2rem;position: absolute;top: calc(42vh - 0.7rem - 60px);left: calc(50% - 1.6rem);}header::before {content: '';position: absolute;top: -50%;bottom: -40%;left: -40%;right: -40%;background: url('header.png?v=2');background-size: 100% 100%;z-index: -1;}header .peng {pointer-events: none;position: absolute;left: -0.15rem;bottom: -0.15rem;width: 0.86666rem;height: 0.825rem;background-image: url('penguin.png?v=2');background-size: 4.3333rem 1.7067rem;background-position: calc(-3.46664rem + 0.86666rem) calc(-0.015rem - 0.86rem);transform: rotate(-10deg);}header .peng + .peng {left: auto;right: -0.17rem;bottom: -0.12rem;transform: rotate(8deg);}header h1 {width: 3.2rem;height: 0.99rem;background: url('h1.png?v=2');background-size: 100% 100%;color: transparent;font-size: 1px;}header p {clear: both;text-align: center;font-size: 0.18rem;font-weight: bold;padding: 0.08rem 0 0.08rem 0;color: #ffffff;text-shadow: 1px 2px 0 #000000;line-height: 1.3;}header li {clear: both;font-size: 0.16rem;padding: 0.13rem 0 1px 0.1rem;line-height: 1.3;}header li img {width: calc(4px + 1.25rem);height: calc(4px + 0.9rem);float: left;transform: rotate(-1deg);border: 2px solid currentColor;border-radius: 0.03rem;}header li + li img {transform: rotate(1deg);}header li span {display: block;margin: 0.12rem 0 0 1.4rem;}header button {background: #002463;margin-top: 18px;filter: drop-shadow(1px 2px 0 #000000);border: 2px solid #ffffff;color: #ffffff;}header:not(.on) button {visibility: hidden;}header:not(.on)::after {position: absolute;left: 0;right: 0;bottom: 5px;content: 'Loading';font-family: '_fontRaybees', sans-serif;text-align: center;color: rgba(0,0,0,0.5);font-size: 23px;padding: 20px;}section, footer {-webkit-user-select: none;-moz-user-select: none;user-select: none;}section {background: #487EA8 url('background.jpg?v=2') center center;background-size: 6rem 100%;width: 100%;height: 10rem;overflow: hidden;}section > div, section p#help {width: 0;height: 0;position: absolute;top: 100%;left: 47%;z-index: 0;}section > div span, section > div div {position: absolute;top: 0;left: 0;transform-origin: 50% 50%;background-size: 100% 100%;pointer-events: none;}section span.ground {background-image: url('ground.png?v=2');}section span.penguin {background-image: url('penguin.png?v=2');background-size: 4.3333rem 1.7067rem;background-position: -0.175rem -0.015rem;}section[data-status="picking"] span.penguin, section[data-status="dragging"] span.penguin[data-pose="dragDefault"], section[data-status="dragging"] span.penguin[data-pose="dragScared"], section[data-status="dragging"] span.penguin[data-pose="dragFall"] {cursor: move;pointer-events: auto;}section span.penguin[data-pose="scared"] {background-position: calc(-0.175rem - 0.86666rem) calc(-0.015rem - 0.85335rem);}section span.penguin[data-pose="left"] {background-position: calc(-0.175rem - 0.86666rem - 0.86666rem - 0.86666rem - 0.86666rem) -0.015rem;}section span.penguin[data-pose="right"] {background-position: calc(-0.175rem - 0.86666rem - 0.86666rem - 0.86666rem) -0.015rem;}section span.penguin[data-pose="up"] {background-position: calc(-0.175rem - 0.86666rem) -0.015rem;}section span.penguin[data-pose="down"] {background-position: calc(-0.175rem - 0.86666rem - 0.86666rem) -0.015rem;}section span.penguin[data-pose="dragDefault"] {background-position: -0.175rem calc(-0.015rem - 0.85335rem);}section span.penguin[data-pose="dragScared"] {background-position: calc(-0.175rem - 0.86666rem - 0.86666rem) calc(-0.015rem - 0.85335rem);}section span.penguin[data-pose="dragFall"] {width: 0.86666rem !important;background-position: -3.46664rem calc(-0.015rem - 0.86rem);}section span.emperor {background-image: url('emperor.png?v=2');background-size: 1.54rem 1.24rem;}section span.emperor[data-pose="awake"] {background-position: right top;}section span.crown {background-image: url('crown.png?v=2');}section span.slab {background-image: url('slab.png?v=2');}section span.throne {background-image: url('throne.png?v=2');}section span.snow {background-image: url('snow.png?v=2');z-index: 1001 !important;}section div.splash {width: 1.2rem;height: 0.5rem;background: url('splash.png?v=2') left top no-repeat;background-size: 100% 100%;z-index: 1002;transform: translate(-50%, -100%);transform-origin: 50% 100%;opacity: 0;}section div.sea {width: calc(100vw + 6.057rem);height: 0.75rem;background: url('sea.png?v=2') left top repeat-x;background-size: 6.057rem 0.75rem;z-index: 1003;transform: translate(0, 1rem);}section p#clock {opacity: 0;pointer-events: none;position: fixed;width: 140px;height: 140px;top: 0;left: 0;background: url('clock.png?v=2');background-size: 100% 100%;overflow: hidden;transform-origin: 50% 50%;transform: translate(-50%, -50%) translate(28px, 64px) scale(0.286);transition: transform 0.3s, opacity 0.3s;}section[data-status="gameOver"] p#clock {transform: translate(-50%, -50%) translate(50vw, 35vh) scale(1);transition: opacity 0.3s;}section[data-status="waiting"] p#clock {transform: translate(-50%, -50%) translate(50vw, 35vh) scale(1);opacity: 1;transition: opacity 0.3s;}section p#clock span {position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: url('clock-hand.png?v=2');background-size: 100% 100%;transform-origin: 50% 50%;}section p#score {pointer-events: none;position: fixed;height: 40px;width: 95px;overflow: hidden;padding: 0 0 0 45px;top: -200px;left: 8px;background: url('score.png?v=2') left top no-repeat;background-size: auto 100%;font-size: 40px;font-family: '_fontRaybees', sans-serif;color: #FFAF08;text-shadow: 1px 2px 0 #000000;line-height: 1;transition: top 1s 0.5s;}section p#score.on {top: 44px;}section p#help {opacity: 0;pointer-events: none;transition: opacity 1s;}section[data-status="picking"] p#help, section[data-status="dragging"] p#help {opacity: 1;transition: opacity 1s 1.5s;}section p#help span {font-size: 0.16rem;position: absolute;line-height: 1.3;}section p#help span:nth-child(1) {left: -1.65rem;top: -8.9rem;width: 1.1rem;text-align: right;}section p#help span:nth-child(2) {left: 1.06rem;top: -7.7rem;width: 0.7rem;}section p#help span:nth-child(3) {left: -1.73rem;top: -5.5rem;width: 0.7rem;text-align: right;}section p#help span:nth-child(4) {right: -53vw;top: -10rem;width: 80vh;transform-origin: 100% 0%;transform: rotate(-90deg) translateY(-130%);}@media (min-width: 640px) {section {background-size: 8rem 100%;}section > div, section p#help {left: 50%;}section p#score{left: 14px;}section p#score.on {top: 48px;}section p#clock {transform: translate(-50%, -50%) translate(34px, 68px) scale(0.286);}section p#help span:nth-child(2) {width: 1rem;}section p#help span:nth-child(4) {right: -50vw;}}@media (min-width: 1200px) {section {background-size: 100% 100%;}}footer {position: fixed;left: calc(50% - 300px);top: calc(40vh - 280px);width: 600px;height: 600px;background: radial-gradient(circle, rgba(72,126,168,0.9) 25%, rgba(72,126,168,0) 70%);font-family: '_fontRaybees', sans-serif;padding: 170px 0 0 0;visibility: hidden;opacity: 0;transition: opacity 0.75s 1s;pointer-events: none;}footer.on {visibility: visible;opacity: 1;}footer h2 {position: relative;font-size: 66px;color: #ffffff;text-shadow: 1px 2px 0 #000000;padding: 0 0 0 6px;text-align: center;white-space: nowrap;line-height: 1;transform: translateY(-500px);opacity: 0;transition: opacity 0.75s 1s, transform 0.75s 1s;}footer.on h2 {opacity: 1;transform: translateY(0px);}footer h2 span:nth-child(2) {display: none;}footer.hero h2 span:nth-child(1) {display: none;}footer.hero h2 span:nth-child(2) {display: inline;}footer.hero h2::after {content: '';width: 59px;height: 38px;background: url('crown.png?v=2');background-size: 100% 100%;position: absolute;bottom: 110%;left: 269px;}footer p {display: none;text-align: center;padding: 12px 0 0 0;}footer p + p {font-size: 40px;color: #ffffff;text-shadow: 1px 2px 0 #000000;}footer p + p span {color: #FFAF08;}footer button {background: #002463;filter: drop-shadow(1px 2px 0 #000000);border: 2px solid #ffffff;color: #ffffff;pointer-events: auto;}#_share {display: none;position: fixed;top: calc(40vh + 55px);left: 0;right: 0;filter: drop-shadow(1px 2px 0 #000000);}
+</style>
+	
+</head>
+<body>
+	
+<div data-nosnippet><!-- 🤷 google workaround -->
+
+<main>
+	
+	
+	<!-- 🦁 main content -->
+
+	<header data-fx="fx.mp3">
+		<h1>Penga</h1>
+		<p>How many penguins can you save from the royal tyrant?</p>
+		<p><button>Start Game</button></p>
+		<div class="peng"></div>
+		<div class="peng"></div>
+	</header>
+
+	<section>
+		<h2 hidden>The Game</h2>
+		<p id="help"><span>Don’t topple the snoozing royal !</span> <span>Drag a penguin + drop it into the sea</span> <span>Any penguin</span> <span>&lt; scroll &gt;</span></p>
+		<div>
+			<span class="ground" data-x="0" data-y="0.5" data-w="2.1" data-h="1" data-ww="2.12" data-hh="1.02"></span>
+			
+			<span class="penguin" data-x="-0.8" data-y="1.4" data-w="0.5" data-h="0.8" data-ww="0.52" data-hh="0.82"></span>
+			<span class="penguin" data-x="0" data-y="1.4" data-w="0.5" data-h="0.8" data-ww="0.52" data-hh="0.82"></span>
+			<span class="penguin" data-x="0.8" data-y="1.4" data-w="0.5" data-h="0.8" data-ww="0.52" data-hh="0.82"></span>
+			
+			<span class="slab" data-x="0" data-y="1.9" data-w="2.2" data-h="0.2" data-ww="2.22" data-hh="0.22"></span>
+			
+			<span class="penguin" data-x="-0.76" data-y="2.4" data-w="0.5" data-h="0.8" data-ww="0.52" data-hh="0.82"></span>
+			<span class="penguin" data-x="0" data-y="2.4" data-w="0.5" data-h="0.8" data-ww="0.52" data-hh="0.82"></span>
+			<span class="penguin" data-x="0.76" data-y="2.4" data-w="0.5" data-h="0.8" data-ww="0.52" data-hh="0.82"></span>
+			
+			<span class="slab" data-x="0" data-y="2.9" data-w="2.12" data-h="0.2" data-ww="2.14" data-hh="0.22"></span>
+			
+			<span class="penguin" data-x="-0.72" data-y="3.4" data-w="0.5" data-h="0.8" data-ww="0.52" data-hh="0.82"></span>
+			<span class="penguin" data-x="0" data-y="3.4" data-w="0.5" data-h="0.8" data-ww="0.52" data-hh="0.82"></span>
+			<span class="penguin" data-x="0.72" data-y="3.4" data-w="0.5" data-h="0.8" data-ww="0.52" data-hh="0.82"></span>
+			
+			<span class="slab" data-x="0" data-y="3.9" data-w="2.04" data-h="0.2" data-ww="2.06" data-hh="0.22"></span>
+			
+			<span class="penguin" data-x="-0.68" data-y="4.4" data-w="0.5" data-h="0.8" data-ww="0.52" data-hh="0.82"></span>
+			<span class="penguin" data-x="0" data-y="4.4" data-w="0.5" data-h="0.8" data-ww="0.52" data-hh="0.82"></span>
+			<span class="penguin" data-x="0.68" data-y="4.4" data-w="0.5" data-h="0.8" data-ww="0.52" data-hh="0.82"></span>
+			
+			<span class="slab" data-x="0" data-y="4.9" data-w="1.96" data-h="0.2" data-ww="1.98" data-hh="0.22"></span>
+			
+			<span class="penguin" data-x="-0.64" data-y="5.4" data-w="0.5" data-h="0.8" data-ww="0.52" data-hh="0.82"></span>
+			<span class="penguin" data-x="0" data-y="5.4" data-w="0.5" data-h="0.8" data-ww="0.52" data-hh="0.82"></span>
+			<span class="penguin" data-x="0.64" data-y="5.4" data-w="0.5" data-h="0.8" data-ww="0.52" data-hh="0.82"></span>
+			
+			<span class="slab" data-x="0" data-y="5.9" data-w="1.88" data-h="0.2" data-ww="1.9" data-hh="0.22"></span>
+			
+			<span class="penguin" data-x="-0.6" data-y="6.4" data-w="0.5" data-h="0.8" data-ww="0.52" data-hh="0.82"></span>
+			<span class="penguin" data-x="0" data-y="6.4" data-w="0.5" data-h="0.8" data-ww="0.52" data-hh="0.82"></span>
+			<span class="penguin" data-x="0.6" data-y="6.4" data-w="0.5" data-h="0.8" data-ww="0.52" data-hh="0.82"></span>
+			
+			<span class="slab" data-x="0" data-y="6.9" data-w="1.8" data-h="0.2" data-ww="1.82" data-hh="0.22"></span>
+			
+			<span class="penguin" data-x="-0.4" data-y="7.4" data-w="0.5" data-h="0.8" data-ww="0.52" data-hh="0.82"></span>
+			<span class="penguin" data-x="0.4" data-y="7.4" data-w="0.5" data-h="0.8" data-ww="0.52" data-hh="0.82"></span>
+			
+			<span class="throne" data-x="0" data-y="7.93" data-w="1.6" data-h="0.26" data-ww="1.62" data-hh="0.28"></span>
+			
+			<span class="emperor" data-x="0" data-y="8.66" data-w="0.73" data-h="1.2" data-ww="0.77" data-hh="1.24"></span>
+			
+			<span class="crown" data-x="0" data-y="9.38" data-w="0.29" data-h="0.22" data-ww="0.39" data-hh="0.26"></span>
+
+			<span class="snow" data-x="0" data-y="0" data-w="0.04" data-h="0.04" data-ww="0.12" data-hh="0.12"></span>
+			<span class="snow" data-x="0" data-y="0" data-w="0.04" data-h="0.04" data-ww="0.1" data-hh="0.1"></span>
+			<span class="snow" data-x="0" data-y="0" data-w="0.04" data-h="0.04" data-ww="0.12" data-hh="0.12"></span>
+			<span class="snow" data-x="0" data-y="0" data-w="0.04" data-h="0.04" data-ww="0.12" data-hh="0.12"></span>
+			<span class="snow" data-x="0" data-y="0" data-w="0.04" data-h="0.04" data-ww="0.11" data-hh="0.11"></span>
+			<span class="snow" data-x="0" data-y="0" data-w="0.04" data-h="0.04" data-ww="0.12" data-hh="0.12"></span>
+			
+			<span class="snow" data-x="0" data-y="0" data-w="0.04" data-h="0.04" data-ww="0.12" data-hh="0.12"></span>
+			<span class="snow" data-x="0" data-y="0" data-w="0.04" data-h="0.04" data-ww="0.1" data-hh="0.1"></span>
+			<span class="snow" data-x="0" data-y="0" data-w="0.04" data-h="0.04" data-ww="0.12" data-hh="0.12"></span>
+			<span class="snow" data-x="0" data-y="0" data-w="0.04" data-h="0.04" data-ww="0.12" data-hh="0.12"></span>
+			<span class="snow" data-x="0" data-y="0" data-w="0.04" data-h="0.04" data-ww="0.11" data-hh="0.11"></span>
+			<span class="snow" data-x="0" data-y="0" data-w="0.04" data-h="0.04" data-ww="0.12" data-hh="0.12"></span>
+
+			<div class="splash"></div>
+			<div class="sea"></div>
+			
+		</div>
+		<p id="clock"><span></span></p>
+		<p id="score">0</p>
+	</section>
+	
+	<footer data-message="🐧 I rescued {best} penguin{s}, rating: {rating}!" data-ratings="extinct penguin|Little Penguin|Macaroni Penguin|Royal Penguin|King Penguin|EMPEROR PENGUIN" class="hero">
+		<div>
+			<h2><span>Game Over</span> <span>You Hero!</span></h2>
+			<p><button>Play Again</button></p>
+			<p>Best Score: <span>0</span></p>
+		</div>
+	</footer>
+
+	
+	<script src="planck.min.js"></script>
+
+
+	<!-- 👭 sharing -->
+	<div id="_share" data-_message="" data-_url=""><button id="_shareCopy">Copy</button><button id="_shareBluesky">Bluesky</button><button id="_shareWhatsApp">WhatsApp</button><button id="_shareMore">…</button></div>
+
+</main>
+
+
+<!-- 🎉 cross-promotion -->
+<aside id="_suggest" aria-hidden="true">
+	<div id="_promos">
+		<button>More Games</button>
+		<p></p>
+		<ul>
+			<li><a href="/">Home</a></li>
+			<li><a href="/blah/">About</a></li>
+			<li><a href="https://crispsandwi.ch/@VOLEwtf">Mastodon</a></li>
+			<li><a href="https://bsky.app/profile/vole.wtf">Bluesky</a></li>
+		</ul>
+	</div>
+</aside>
+
+
+<!-- 🍔 nav bar -->
+<div id="_nav">
+	<button aria-expanded="false" aria-controls="_navMenu">Toggle menu</button>
+	<nav id="_navMenu" aria-label="Main menu">
+		<ul role="list">
+			<li><a href="/">Home Page</a></li>
+			<li><a href="/blah/">info blah</a></li>
+			<li><a rel="me" href="https://crispsandwi.ch/@VOLEwtf">Mastodon</a></li>
+			<li><a href="https://bsky.app/profile/vole.wtf">Bluesky</a></li>
+			<li id="_navBuy"><a href="/buy-this-site/#buy-penga">Buy This Project</a></li>
+			<li id="_navDestroy" aria-hidden="true"><a href="#" data-_destroy-js="/_common/destroy/destroy.js?v=1.82" data-_destroy-css="/_common/destroy/destroy.css?v=1.82" data-_destroy-explosion="/_common/destroy/explosion.gif?v=1.82" data-_destroy-audio="/_common/destroy/explosives.mp3?v=1.82" title="Go on, you know you want to">Destroy this page</a></li>
+		</ul>
+		<ol role="list">
+			<li><a href="/glasses-cleaning/" data-new="1" data-updated="0"><img src="/glasses-cleaning/thumb.jpg?v=1.82" alt="Glasses Cleaning Simulator" loading="lazy" aria-hidden="true"><span>Glasses Cleaning Simulator</span></a></li>
+			<li><a href="/buy-this-site/" data-new="0" data-updated="0"><img src="/buy-this-site/thumb.jpg?v=1.82" alt="Buy This Site" loading="lazy" aria-hidden="true"><span>Buy This Site</span></a></li>
+			<li><a href="/potatocam/" data-new="0" data-updated="0"><img src="/potatocam/thumb.jpg?v=1.82" alt="PotatoCam" loading="lazy" aria-hidden="true"><span>PotatoCam</span></a></li>
+			<li><a href="/cool-s/" data-new="0" data-updated="0"><img src="/cool-s/thumb.jpg?v=1.82" alt="Can You Draw a Cool S ?" loading="lazy" aria-hidden="true"><span>Can You Draw a Cool S ?</span></a></li>
+			<li><a href="/doctype/" data-new="0" data-updated="0"><img src="/doctype/thumb.jpg?v=1.82" alt="DOCTYPE magazine" loading="lazy" aria-hidden="true"><span>DOCTYPE magazine</span></a></li>
+			<li><a href="/one-percent/" data-new="0" data-updated="0"><img src="/one-percent/thumb.jpg?v=1.82" alt="The 1% Guild" loading="lazy" aria-hidden="true"><span>The 1% Guild</span></a></li>
+			<li><a href="/crisp-sandwich-day/" data-new="0" data-updated="0"><img src="/crisp-sandwich-day/thumb.jpg?v=1.82" alt="Crisp Sandwich Day" loading="lazy" aria-hidden="true"><span>Crisp Sandwich Day</span></a></li>
+			<li><a href="/reload-clicker/" data-new="0" data-updated="0"><img src="/reload-clicker/thumb.jpg?v=1.82" alt="Reload Clicker" loading="lazy" aria-hidden="true"><span>Reload Clicker</span></a></li>
+			<li><a href="/gift-shop/" data-new="0" data-updated="0"><img src="/gift-shop/thumb.jpg?v=1.82" alt="Gift Shop" loading="lazy" aria-hidden="true"><span>Gift Shop</span></a></li>
+			<li><a href="/vtv/" data-new="0" data-updated="0"><img src="/vtv/thumb.jpg?v=1.82" alt="VTV music video station" loading="lazy" aria-hidden="true"><span>VTV music video station</span></a></li>
+			<li><a href="/celeb-clock/" data-new="0" data-updated="0"><img src="/celeb-clock/thumb.jpg?v=1.82" alt="Celeb Clock" loading="lazy" aria-hidden="true"><span>Celeb Clock</span></a></li>
+			<li><a href="/primesweeper/" data-new="0" data-updated="0"><img src="/primesweeper/thumb.jpg?v=1.82" alt="Primesweeper" loading="lazy" aria-hidden="true"><span>Primesweeper</span></a></li>
+			<li><a href="/overpriced-basic-url/" data-new="0" data-updated="0"><img src="/overpriced-basic-url/thumb.jpg?v=1.82" alt="OVERPRICED BASIC LINK" loading="lazy" aria-hidden="true"><span>OVERPRICED BASIC LINK</span></a></li>
+			<li><a href="/goalie/" data-new="0" data-updated="0"><img src="/goalie/thumb.jpg?v=1.82" alt="The Incredible Shrinking Goalie" loading="lazy" aria-hidden="true"><span>The Incredible Shrinking Goalie</span></a></li>
+			<li><a href="/how-punctual/" data-new="0" data-updated="0"><img src="/how-punctual/thumb.jpg?v=1.82" alt="How Punctual Are You?" loading="lazy" aria-hidden="true"><span>How Punctual Are You?</span></a></li>
+			<li><a href="/comic-sans-maps/" data-new="0" data-updated="0"><img src="/comic-sans-maps/thumb.jpg?v=1.82" alt="Comic Sans Maps" loading="lazy" aria-hidden="true"><span>Comic Sans Maps</span></a></li>
+			<li><a href="/selfie-shuffle/" data-new="0" data-updated="0"><img src="/selfie-shuffle/thumb.jpg?v=1.82" alt="Selfie Shuffle puzzle" loading="lazy" aria-hidden="true"><span>Selfie Shuffle puzzle</span></a></li>
+			<li><a href="/styscraper/" data-new="0" data-updated="0"><img src="/styscraper/thumb.jpg?v=1.82" alt="Styscraper - pig stacking game" loading="lazy" aria-hidden="true"><span>Styscraper - pig stacking game</span></a></li>
+			<li><a href="/stopormy-dot-mom/" data-new="0" data-updated="0"><img src="/stopormy-dot-mom/thumb.jpg?v=1.82" alt="Stop! Or My Mom Will Shoot fansite" loading="lazy" aria-hidden="true"><span>Stop! Or My Mom Will Shoot fansite</span></a></li>
+			<li><a href="/dog-poo-golf/" data-new="0" data-updated="0"><img src="/dog-poo-golf/thumb.jpg?v=1.82" alt="Dog Poo Golf" loading="lazy" aria-hidden="true"><span>Dog Poo Golf</span></a></li>
+			<li><a href="/british-teeth/" data-new="0" data-updated="0"><img src="/british-teeth/thumb.jpg?v=1.82" alt="How British Are Your Teeth?" loading="lazy" aria-hidden="true"><span>How British Are Your Teeth?</span></a></li>
+			<li><a href="/hellmouth/" data-new="0" data-updated="0"><img src="/hellmouth/thumb.jpg?v=1.82" alt="Hellmouth Finder" loading="lazy" aria-hidden="true"><span>Hellmouth Finder</span></a></li>
+			<li><a href="/daybrix/" data-new="0" data-updated="0"><img src="/daybrix/thumb.jpg?v=1.82" alt="DayBrix daily minigame" loading="lazy" aria-hidden="true"><span>DayBrix daily minigame</span></a></li>
+			<li><a href="/crow-flies/" data-new="0" data-updated="0"><img src="/crow-flies/thumb.jpg?v=1.82" alt="As The Crow Flies" loading="lazy" aria-hidden="true"><span>As The Crow Flies</span></a></li>
+			<li><a href="/raybees-font/" data-new="0" data-updated="0"><img src="/raybees-font/thumb.jpg?v=1.82" alt="Raybees Font v2" loading="lazy" aria-hidden="true"><span>Raybees Font v2</span></a></li>
+			<li><a href="/arcc/" data-new="0" data-updated="0"><img src="/arcc/thumb.jpg?v=1.82" alt="Apocalypse Recovery Computing Cluster" loading="lazy" aria-hidden="true"><span>Apocalypse Recovery Computing Cluster</span></a></li>
+			<li><a href="/british-seaside/" data-new="0" data-updated="0"><img src="/british-seaside/thumb.jpg?v=1.82" alt="British Seaside Simulator" loading="lazy" aria-hidden="true"><span>British Seaside Simulator</span></a></li>
+			<li><a href="/clone-a-lisa/" data-new="0" data-updated="0"><img src="/clone-a-lisa/thumb.jpg?v=1.82" alt="Clone-a Lisa forgery game" loading="lazy" aria-hidden="true"><span>Clone-a Lisa forgery game</span></a></li>
+			<li><a href="/biro-banana/" data-new="0" data-updated="0"><img src="/biro-banana/thumb.jpg?v=1.82" alt="Biro + Banana = Art" loading="lazy" aria-hidden="true"><span>Biro + Banana = Art</span></a></li>
+			<li><a href="/big-ben/" data-new="0" data-updated="0"><img src="/big-ben/thumb.jpg?v=1.82" alt="BIG BEN word game" loading="lazy" aria-hidden="true"><span>BIG BEN word game</span></a></li>
+			<li><a href="/britains-most-boring/" data-new="0" data-updated="0"><img src="/britains-most-boring/thumb.jpg?v=1.82" alt="Britain’s Most Boring" loading="lazy" aria-hidden="true"><span>Britain’s Most Boring</span></a></li>
+			<li><a href="/mastodon/" data-new="0" data-updated="0"><img src="/mastodon/thumb.jpg?v=1.82" alt="Join our Mastodon server" loading="lazy" aria-hidden="true"><span>Join our Mastodon server</span></a></li>
+			<li><a href="/voleflix/" data-new="0" data-updated="0"><img src="/voleflix/thumb.jpg?v=1.82" alt="Voleflix free movies" loading="lazy" aria-hidden="true"><span>Voleflix free movies</span></a></li>
+			<li><a href="/hampster-invaders/" data-new="0" data-updated="0"><img src="/hampster-invaders/thumb.jpg?v=1.82" alt="Hampster Invaders" loading="lazy" aria-hidden="true"><span>Hampster Invaders</span></a></li>
+			<li><a href="/kilogram/" data-new="0" data-updated="0"><img src="/kilogram/thumb.jpg?v=1.82" alt="Kilogram - 1KB photo site" loading="lazy" aria-hidden="true"><span>Kilogram - 1KB photo site</span></a></li>
+			<li><a href="/childhood-ambitions/" data-new="0" data-updated="0"><img src="/childhood-ambitions/thumb.jpg?v=1.82" alt="Childhood Ambitions …vs reality" loading="lazy" aria-hidden="true"><span>Childhood Ambitions …vs reality</span></a></li>
+			<li><a href="/imaginary-friends/" data-new="0" data-updated="0"><img src="/imaginary-friends/thumb.jpg?v=1.82" alt="Imaginary Friends Reunited" loading="lazy" aria-hidden="true"><span>Imaginary Friends Reunited</span></a></li>
+			<li><a href="/ganksy/" data-new="0" data-updated="0"><img src="/ganksy/thumb.jpg?v=1.82" alt="GANksy A.I. street artist" loading="lazy" aria-hidden="true"><span>GANksy A.I. street artist</span></a></li>
+			<li><a href="/penga/" data-new="0" data-updated="0"><img src="/penga/thumb.jpg?v=1.82" alt="Penga - penguin physics game" loading="lazy" aria-hidden="true"><span>Penga - penguin physics game</span></a></li>
+			<li><a href="/bokeh/" data-new="0" data-updated="0"><img src="/bokeh/thumb.jpg?v=1.82" alt="BOKEH game" loading="lazy" aria-hidden="true"><span>BOKEH game</span></a></li>
+			<li><a href="/vmail/" data-new="0" data-updated="0"><img src="/vmail/thumb.jpg?v=1.82" alt="Vmail - our email newsletter" loading="lazy" aria-hidden="true"><span>Vmail - our email newsletter</span></a></li>
+			<li><a href="/triple-tautonyms/" data-new="0" data-updated="0"><img src="/triple-tautonyms/thumb.jpg?v=1.82" alt="Triple Tautonyms" loading="lazy" aria-hidden="true"><span>Triple Tautonyms</span></a></li>
+			<li><a href="/clickbait-genius/" data-new="0" data-updated="0"><img src="/clickbait-genius/thumb.jpg?v=1.82" alt="Are You a Clickbait Genius?" loading="lazy" aria-hidden="true"><span>Are You a Clickbait Genius?</span></a></li>
+			<li><a href="/buttystock/" data-new="0" data-updated="0"><img src="/buttystock/thumb.jpg?v=1.82" alt="ButtyStock" loading="lazy" aria-hidden="true"><span>ButtyStock</span></a></li>
+			<li><a href="/buttystock/ar/" data-new="0" data-updated="0"><img src="/buttystock/ar/thumb.jpg?v=1.82" alt="Augmented Reality Crisp Sandwich" loading="lazy" aria-hidden="true"><span>Augmented Reality Crisp Sandwich</span></a></li>
+			<li><a href="/freddo/" data-new="0" data-updated="0"><img src="/freddo/thumb.jpg?v=1.82" alt="World’s Biggest Freddo" loading="lazy" aria-hidden="true"><span>World’s Biggest Freddo</span></a></li>
+			<li><a href="/kilobytes-gambit/" data-new="0" data-updated="0"><img src="/kilobytes-gambit/thumb.jpg?v=1.82" alt="The Kilobyte’s Gambit" loading="lazy" aria-hidden="true"><span>The Kilobyte’s Gambit</span></a></li>
+			<li><a href="/happy-birthday/" data-new="0" data-updated="0"><img src="/happy-birthday/thumb.jpg?v=1.82" alt="Happy Birthday To You public domain" loading="lazy" aria-hidden="true"><span>Happy Birthday To You public domain</span></a></li>
+			<li><a href="/trudgecast/" data-new="0" data-updated="0"><img src="/trudgecast/thumb.jpg?v=1.82" alt="TrudgeCast podcast" loading="lazy" aria-hidden="true"><span>TrudgeCast podcast</span></a></li>
+			<li><a href="/this-mp-does-not-exist/" data-new="0" data-updated="0"><img src="/this-mp-does-not-exist/thumb.jpg?v=1.82" alt="This MP Does Not Exist" loading="lazy" aria-hidden="true"><span>This MP Does Not Exist</span></a></li>
+			<li><a href="/scunthorpe-sans/" data-new="0" data-updated="0"><img src="/scunthorpe-sans/thumb.jpg?v=1.82" alt="Scunthorpe Sans" loading="lazy" aria-hidden="true"><span>Scunthorpe Sans</span></a></li>
+			<li><a href="/webcam-age/" data-new="0" data-updated="0"><img src="/webcam-age/thumb.jpg?v=1.82" alt="What’s Your Webcam Age?" loading="lazy" aria-hidden="true"><span>What’s Your Webcam Age?</span></a></li>
+			<li><a href="/death-roulette/" data-new="0" data-updated="0"><img src="/death-roulette/thumb.jpg?v=1.82" alt="17th Century Death Roulette" loading="lazy" aria-hidden="true"><span>17th Century Death Roulette</span></a></li>
+			<li><a href="/avocado-n-toast/" data-new="0" data-updated="0"><img src="/avocado-n-toast/thumb.jpg?v=1.82" alt="Avocado’n’Toast comic generator" loading="lazy" aria-hidden="true"><span>Avocado’n’Toast comic generator</span></a></li>
+			<li><a href="/how-disgusting/" data-new="0" data-updated="0"><img src="/how-disgusting/thumb.jpg?v=1.82" alt="How DISGUSTING Are You?" loading="lazy" aria-hidden="true"><span>How DISGUSTING Are You?</span></a></li>
+			<li><a href="/simons/" data-new="0" data-updated="0"><img src="/simons/thumb.jpg?v=1.82" alt="SIMONS memory game" loading="lazy" aria-hidden="true"><span>SIMONS memory game</span></a></li>
+			<li><a href="/high-notes/" data-new="0" data-updated="0"><img src="/high-notes/thumb.jpg?v=1.82" alt="Hit the High Notes" loading="lazy" aria-hidden="true"><span>Hit the High Notes</span></a></li>
+			<li><a href="/calm-down-britain/" data-new="0" data-updated="0"><img src="/calm-down-britain/thumb.jpg?v=1.82" alt="Calm Down Britain" loading="lazy" aria-hidden="true"><span>Calm Down Britain</span></a></li>
+			<li><a href="/cydapc-moved/" data-new="0" data-updated="0"><img src="/cydapc-moved/thumb.jpg?v=1.82" alt="Can You Draw a Perfect Circle?" loading="lazy" aria-hidden="true"><span>Can You Draw a Perfect Circle?</span></a></li>
+			<li><a href="/dog-breeds/" data-new="0" data-updated="0"><img src="/dog-breeds/thumb.jpg?v=1.82" alt="Dog Breeds Chart" loading="lazy" aria-hidden="true"><span>Dog Breeds Chart</span></a></li>
+			<li><a href="/sleep-animal/" data-new="0" data-updated="0"><img src="/sleep-animal/thumb.jpg?v=1.82" alt="What’s Your Sleep Animal?" loading="lazy" aria-hidden="true"><span>What’s Your Sleep Animal?</span></a></li>
+			<li><a href="/goth-or-moth/" data-new="0" data-updated="0"><img src="/goth-or-moth/thumb.jpg?v=1.82" alt="Goth or Moth?" loading="lazy" aria-hidden="true"><span>Goth or Moth?</span></a></li>
+			<li><a href="/plaiceholder-images/" data-new="0" data-updated="0"><img src="/plaiceholder-images/thumb.jpg?v=1.82" alt="Plaiceholder Images" loading="lazy" aria-hidden="true"><span>Plaiceholder Images</span></a></li>
+			<li><a href="/kick-the-ball-back/" data-new="0" data-updated="0"><img src="/kick-the-ball-back/thumb.jpg?v=1.82" alt="Kick the Ball Back" loading="lazy" aria-hidden="true"><span>Kick the Ball Back</span></a></li>
+			<li><a href="/they-walk-among-us/" data-new="0" data-updated="0"><img src="/they-walk-among-us/thumb.jpg?v=1.82" alt="They Walk Among Us" loading="lazy" aria-hidden="true"><span>They Walk Among Us</span></a></li>
+			<li><a href="/work-reply-soundboard/" data-new="0" data-updated="0"><img src="/work-reply-soundboard/thumb.jpg?v=1.82" alt="Work Reply Soundboard" loading="lazy" aria-hidden="true"><span>Work Reply Soundboard</span></a></li>
+			<li><a href="/text-generator/" data-new="0" data-updated="0"><img src="/text-generator/thumb.jpg?v=1.82" alt="Text Generator" loading="lazy" aria-hidden="true"><span>Text Generator</span></a></li>
+			<li><a href="/coder-serial-killer-quiz/" data-new="0" data-updated="0"><img src="/coder-serial-killer-quiz/thumb.jpg?v=1.82" alt="Programming Language Inventor or Serial Killer?" loading="lazy" aria-hidden="true"><span>Programming Language Inventor or Serial Killer?</span></a></li>
+		</ol>
+	</nav>
+	<p><input type="checkbox" id="_navSound" checked hidden><label for="_navSound">Toggle sound</label></p>
+</div>
+
+<!-- 🧳 must-wait-for preloads -->
+<div id="_preloads" aria-hidden="true"><span>v</span><span>o</span><span>l</span><span>e</span><img src="header.png?v=2" alt="" loading="eager"><img src="penguin.png?v=2" alt="" loading="eager"><img src="h1.png?v=2" alt="" loading="eager"><img src="background.jpg?v=2" alt="" loading="eager"><img src="ground.png?v=2" alt="" loading="eager"><img src="penguin.png?v=2" alt="" loading="eager"><img src="emperor.png?v=2" alt="" loading="eager"><img src="crown.png?v=2" alt="" loading="eager"><img src="slab.png?v=2" alt="" loading="eager"><img src="throne.png?v=2" alt="" loading="eager"><img src="snow.png?v=2" alt="" loading="eager"><img src="splash.png?v=2" alt="" loading="eager"><img src="sea.png?v=2" alt="" loading="eager"><img src="clock.png?v=2" alt="" loading="eager"><img src="clock-hand.png?v=2" alt="" loading="eager"><img src="score.png?v=2" alt="" loading="eager"><img src="crown.png?v=2" alt="" loading="eager"></div>
+
+
+<!-- 💬 alert dialog -->
+<dialog id="_alert">
+  <p></p>
+  <form method="dialog">
+	<button>Close</button>
+  </form>
+</dialog>
+
+
+<!-- 🫨 haptics hack -->
+<label id="_buzz" aria-hidden="true" hidden><input type="checkbox" switch></label>
+
+
+</div><!-- 🤷 google workaround -->
+
+
+<!-- 💾 scripting -->
+<script src="/_common/common.js?v=1.82"></script>
+<script src="/_common/common-audio2.js?v=1.82"></script>
+<script>
+	let pi = Math.PI;let p = planck;let pv = planck.Vec2;let pvStill = pv(0, 0);let pvSunk = pv(-10,15);let bodies = [];let spans = $('section > div span');let world;let timer;let tLast;let count;let sea;let splashCount;let splashX;let splashScaleX;let splashW;let splashH;let status;let waitingCount;let score;let sunk;let best = parseFloat(_VOLE.localStorage.getItem('penga') ?? 0);let fx;let fxClock = false;let diag = $('#diag').length;function restart() {setTimeout(function() {let f = fx.play('start');fx.volume(0.4, f);}, 190);timer = performance.now();tLast = timer;count = 0;dragging = false;draggingActive = false;splashCount = 0;splashX = 0;splashScaleX = 1;splashW = 0;splashH = 0;status = 'picking';$('section').attr('data-status', status);$('section p#clock span').css('transform', 'none');waitingCount = 0;score = 0;sunk = 0;$('section p#score').text('0').addClass('on');for (let b of bodies) {let u = b.getUserData();let s = spans.eq(u.i);u.debounce = 0;let x = parseFloat(s.attr('data-x'));let y = parseFloat(s.attr('data-y'));let a = 0;if (u.class !== 'ground') {b.setDynamic();y = y*1.002;}switch (u.class) {case 'snow':x = 3 - 1.7*Math.random();if (u.i < 36) {x = -3.1 + 0.3*(u.i - 30);} else {x = 1.3 + 0.3*(u.i - 36);}y = 5 + 20*Math.random();a = Math.random()*2*pi;b.setLinearDamping(14 + 12*Math.random());break;case 'penguin':case 'slab':case 'throne':x += -0.025 + 0.05*Math.random();break;}b.setPosition(pv(x, y));b.setAngle(a);b.setLinearVelocity(pvStill);b.setAngularVelocity(0);s.attr('data-pose', '');}$(window).scrollTop(0);render();}function init() {world = p.World({allowSleep: false,gravity: { x: 0, y: -13 }});spans.each(function(i) {let c = $(this).attr('class');let w = parseFloat($(this).attr('data-w'));let h = parseFloat($(this).attr('data-h'));let ww = parseFloat($(this).attr('data-ww'));let hh = parseFloat($(this).attr('data-hh'));let type = 'dynamic';if (c == 'ground') {type = 'static';}$(this).css('width', String(ww) + 'rem').css('height', String(hh) + 'rem');let b = world.createBody({userData: { class: c, i: i, debounce: 0 },type: type});switch (c) {case 'penguin':b.createFixture({shape: p.Box(0.5*w - 0.01, 0.5*h - 0.01),density: 1,restitution: 0.4,friction: 0.5});break;case 'emperor':b.createFixture({shape: p.Box(0.5*w - 0.02, 0.5*h - 0.25*w - 0.01, pv(0, -0.25*w)),density: 0.75,restitution: 0.4,friction: 0.5});b.createFixture({shape: p.Circle(pv(0, 0.5*h - 0.5*w), 0.5*w - 0.01),density: 0.75,restitution: 0.25,friction: 0.5});break;case 'crown':b.createFixture({shape: p.Box(0.5*w - 0.01, 0.5*h - 0.01),density: 1,restitution: 0.2,friction: 2});break;case 'snow':b.createFixture({shape: p.Box(0.5*w - 0.01, 0.5*h - 0.01),density: 0.01,restitution: 0,friction: 0.3});b.setAngularDamping(3);break;case 'slab':b.createFixture({shape: p.Box(0.5*w - 0.01, 0.5*h - 0.01),density: 2,restitution: 0.1,friction: 0.1});break;case 'throne':b.createFixture({shape: p.Box(0.5*w - 0.01, 0.5*h - 0.01),density: 2,restitution: 0.1,friction: 0.1});break;case 'ground':b.createFixture({shape: p.Box(0.5*w - 0.01, 0.5*h - 0.01),density: 1,restitution: 0.1,friction: 0.1});break;}bodies[i] = b;});restart();requestAnimationFrame(loop);}function render() {let bp;if (draggingActive) {bp = bodies[dragging].getPosition();}for (let b of bodies) {let u = b.getUserData();let p = b.getPosition();let a = b.getAngle();let lv = b.getLinearVelocity();let av = b.getAngularVelocity();spans.eq(u.i).css('transform', 'translate(-50%, -50%) translate(' + String(p.x) + 'rem, ' + String(-p.y) + 'rem) rotate(' + String(-a/pi*180) + 'deg)').css('z-index', Math.max(0, Math.min(1000, Math.floor(p.y*100) ) ) );switch (u.class) {case 'emperor':if (u.debounce) {u.debounce --;} else {u.debounce = 40;if ( (Math.abs(lv.y) > 0.3) || (Math.abs(av) > 0.5) ) {if (spans.eq(u.i).attr('data-pose') !== 'awake') {let f = fx.play('emperor' + String(1 + Math.round( Math.random() ) ) );fx.volume(0.2 + 0.1*Math.random(), f);}spans.eq(u.i).attr('data-pose', 'awake');} else {spans.eq(u.i).attr('data-pose', 'asleep');}}break;case 'penguin':if (b.isStatic()) {break;}if (u.debounce) {u.debounce --;} else {if (dragging == u.i) {u.debounce = 10;if (draggingActive) {if (spans.eq(u.i).attr('data-pose').indexOf('drag') !== 0) {let f = fx.play('penguin' + String( Math.floor( 6*Math.random() ) ) );fx.volume(0.1 + 0.3*Math.random(), f);}spans.eq(u.i).attr('data-pose', 'dragScared');} else {if (lv.y < -0.4) {if (spans.eq(u.i).attr('data-pose') !== 'dragFall') {let f = fx.play('penguin' + String( Math.floor( 6*Math.random() ) ) );fx.volume(0.1 + 0.3*Math.random(), f);}spans.eq(u.i).attr('data-pose', 'dragFall');} else {spans.eq(u.i).attr('data-pose', 'dragDefault');}}} else {u.debounce = 50 + Math.floor(20*Math.random());if ((Math.abs(a) % (2*pi)) > 0.2) {if (spans.eq(u.i).attr('data-pose') !== 'scared') {let f = fx.play('penguin' + String( Math.floor( 6*Math.random() ) ) );fx.volume(0.05 + 0.15*Math.random(), f);}spans.eq(u.i).attr('data-pose', 'scared');} else {if (draggingActive) {if (Math.abs(bp.x - p.x) > Math.abs(bp.y - p.y)) {if (bp.x > p.x) {spans.eq(u.i).attr('data-pose', 'right');} else {spans.eq(u.i).attr('data-pose', 'left');}} else {if (bp.y > p.y) {spans.eq(u.i).attr('data-pose', 'up');} else {spans.eq(u.i).attr('data-pose', 'down');}}} else {if (Math.random() < 0.9) {spans.eq(u.i).attr('data-pose', 'default');} else {switch (Math.floor(4*Math.random())) {case 0:spans.eq(u.i).attr('data-pose', 'up');break;case 1:spans.eq(u.i).attr('data-pose', 'down');break;case 2:spans.eq(u.i).attr('data-pose', 'left');break;case 3:spans.eq(u.i).attr('data-pose', 'right');break;}}}}}}break;}}if (splashCount) {$('section div.splash').css('transform', 'translate(-50%, -100%) translate(' + String(splashX) + 'rem, -' + String(sea - 0.05 - (15-splashCount)/30*splashH) +  'rem) scaleX(' + String(splashScaleX) + ')').css('width', String(splashW) + 'rem').css('height', String(splashH) + 'rem').css('opacity', splashCount/15);} else {$('section div.splash').css('opacity', 0);}$('section div.sea').css('transform', 'translateX(-50vw) translate(-' + String((count/400) % 6.057) + 'rem, -' + String(sea) +  'rem)');if (status === 'waiting') {$('section p#clock span').css('transform', 'rotate(' + String(360*(180 - waitingCount)/180) + 'deg)');}}function loop(t) {requestAnimationFrame(loop);let frame = t - timer;if (frame < 16) {return;}timer = t - (Math.min(frame, 25) - 16);let frameActual = t - tLast;tLast = t;count ++;if (splashCount) {splashCount --;}if (status === 'waiting') {waitingCount --;if (waitingCount === 0) {let f = fx.play('score');fx.volume(0.15, f);status = 'picking';$('section').attr('data-status', status);score ++;$('section p#score').text(score);$('section p#help').hide();if (score === 20) {gameOver(true);}}}if (status === 'picking') {if (sunk === 20) {gameOver(false);}}sea = 0.75 - 0.06 + 0.06*Math.sin(count/60);for (let b of bodies) {if (b.isStatic()) {continue;}let u = b.getUserData();let y = b.getPosition().y;switch (u.class) {case 'snow':if (y < sea-0.04) {b.setPosition(pv(-3 + 6*Math.random(), 11 + 3*Math.random()));b.setAngle(Math.random()*2*pi);b.setLinearDamping(14 + 12*Math.random());}break;case 'penguin':if (y < sea) {let vy = b.getLinearVelocity().y;if ( (splashCount < 10) && (vy < -0.1) && (y - vy/60 > sea) ) {splashX = b.getPosition().x;splashW = 0.65 - vy/50;splashH = 0.1 - vy/25;splashCount = 15;splashScaleX = -1 + 2*Math.round(Math.random());let f = fx.play('splash' + String(Math.floor(5*Math.random())) );fx.volume(Math.min(0.005 - 0.005*vy, 0.4), f);}if (y < -2) {b.setStatic();b.setPosition(pvSunk);sunk ++;} else {b.getLinearVelocity().clamp(1.5);}if (dragging === u.i) {if ( (status === 'picking') || (status == 'dragging') ) {$('section').trigger('mouseup');dragging = false;status = 'waiting';$('section').attr('data-status', status);waitingCount = 180;fxClock = fx.play('clock');fx.volume(0.05, fxClock);}}}break;case 'emperor':if (y < sea) {let vy = b.getLinearVelocity().y;if (y - vy/60 > sea) {splashX = b.getPosition().x;splashW = 1.5*(0.65 - vy/50);splashH = 1.5*(0.1 - vy/25);splashCount = 15;splashScaleX = -1 + 2*Math.round(Math.random());let f = fx.play('splash5');fx.volume(Math.min(0.005 - 0.015*vy, 0.4), f);}if (y < -2) {b.setStatic();b.setPosition(pvSunk);} else {b.getLinearVelocity().clamp(1);}if ( (status === 'picking') || (status == 'dragging') || (status == 'waiting') ) {let f = fx.play('emperor0');fx.volume(0.45, f);gameOver(false);}}break;case 'slab':case 'throne':if (y < sea) {if (y < -2) {b.setStatic();b.setPosition(pvSunk);} else {b.getLinearVelocity().clamp(2);}}break;case 'crown':if (y < sea) {let vy = b.getLinearVelocity().y;if (y - vy/60 > sea) {let f = fx.play('splash' + String(Math.floor(5*Math.random())) );fx.volume(Math.min(0.005 - 0.005*vy, 0.1), f);}}break;}}if ( (draggingActive) && (status === 'dragging') ) {let vx = (dragPos.x - dragOffset.x - bodies[dragging].getPosition().x)*15;let vy = (Math.max(dragPos.y - dragOffset.y, 1.38) - bodies[dragging].getPosition().y)*15;bodies[dragging].setLinearVelocity(pv(vx, vy).clamp(12));}world.step(1/60);if (frameActual >= 30) {world.step(1/60);}if (diag) {if (count % 12 === 0) {$('#diag').text( Math.round( (1000/frameActual + parseFloat($('#diag').text()))/2 ) );}}render();}function browserToGame(bx, by) {let o = $('section div').offset();let scale = o.top/10;return {x: (bx - o.left)/scale,y: -(by - o.top)/scale};}let dragging = false;let draggingActive = false;let dragPos = {};let dragOffset = {};$('section span.penguin').on('mousedown touchstart', function(e) {if (draggingActive) {return;}let f = fx.play('grab');fx.volume(0.2, f);status = 'dragging';$('section').attr('data-status', status);draggingActive = true;dragging = $(this).index();if (e.type.indexOf('touch') === 0) {dragPos = browserToGame(e.touches[0].pageX, e.touches[0].pageY);} else {dragPos = browserToGame(e.pageX, e.pageY);}dragOffset.x = dragPos.x - bodies[dragging].getPosition().x;dragOffset.y = dragPos.y - bodies[dragging].getPosition().y;bodies[dragging].setKinematic();bodies[dragging].setAngularVelocity(0);bodies[dragging].getUserData().debounce = 0;return false;});$('section').on('mousemove touchmove', function(e) {if (! draggingActive) {return;}if (e.type.indexOf('touch') === 0) {dragPos = browserToGame(e.touches[0].pageX, e.touches[0].pageY);} else {dragPos = browserToGame(e.pageX, e.pageY);}return false;});$('section').on('mouseup mouseleave touchend touchcancel', function(e) {if (! draggingActive) {return;}let f = fx.play('drop');fx.volume(0.05, f);bodies[dragging].setDynamic();bodies[dragging].getUserData().debounce = 0;draggingActive = false;return false;});$(window).on('orientationchange resize', function() {$('body').trigger('mouseup');});window.addEventListener('scroll', function() {$('body').trigger('mouseup');}, { passive: true });$('section').on('dragstart selectstart', function() {return false;});function gameOver(hero) {if ($('footer').hasClass('on')) {return;}if (fxClock !== false) {fx.stop(fxClock);}$('section').trigger('mouseup');dragging = false;status = 'gameOver';$('section').attr('data-status', status);if (score > best) {best = score;_VOLE.localStorage.setItem('penga', best);}$('footer p span').text(best);let m = $('footer').attr('data-message');if (best === 20) {m = m.replace('{best}', 'all 20');} else {m = m.replace('{best}', best);}m = m.replace('{s}', (best === 1) ? '' : 's');let ratings = $('footer').attr('data-ratings').split('|');let r = ratings[0];switch (best) {case 1:case 2:case 3:case 4:r = ratings[1];break;case 5:case 6:case 7:case 8:case 9:r = ratings[2];break;case 10:case 11:case 12:case 13:case 14:r = ratings[3];break;case 15:case 16:case 17:case 18:case 19:r = ratings[4];break;case 20:r = ratings[5];break;}m = m.replace('{rating}', r);$('#_share').attr('data-_message', m);let s = Math.max(0, $('section').height() - $(window).height() );if ($(window).scrollTop() > s) {$(window).scrollTop(s)}$('footer').removeClass('hero');if (hero) {$('footer').addClass('hero');}$('footer').addClass('on');setTimeout(function() {if (hero) {let f = fx.play('hero');fx.volume(0.5, f);}$('footer p').eq(0).show();}, 1850);setTimeout(function() {if ($('footer').hasClass('on')) {$('footer p').eq(1).show();$('#_share').show();}}, 2050);}$('footer button').on('click', function() {$('footer').removeClass('on');$('footer p').hide();$('#_share').hide();restart();_VOLE.buzz(true);});$('header button').on('click', function() {$('header').remove();init();_VOLE.buzz(true);});$(window).on('load', function() {fx = new Howl({src: [$('header').attr('data-fx')],volume: 1,sprite: {start: [304, 613],grab: [1216, 100],drop: [1757, 100],score: [2314, 750],clock: [3535, 3100],penguin0: [7285, 362],penguin1: [8007, 430],penguin2: [8823, 350],penguin3: [9580, 454],penguin4: [10354, 447],penguin5: [11210, 404],emperor0: [12128, 481],emperor1: [13083, 260],emperor2: [13926, 188],hero: [14691, 2203],splash0: [17384, 1291],splash1: [19149, 1325],splash2: [20969, 1108],splash3: [22560, 1541],splash4: [24573, 1339],splash5: [26384, 2881]},onload: function() {$('header').addClass('on');}});});
+</script>
+
+
+<!-- 📊 analytics -->
+<script>
+	window.fathom = { trackGoal: function(a,b){} };
+</script>
+<script src="https://cdn.usefathom.com/script.js" data-site="RBWKC" defer></script>
+
+
+<!-- ⏱ 0.0020 -->
+</body>
+</html>
